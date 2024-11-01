@@ -62,8 +62,8 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 config :playground, :nodes, [
-  :"node2192.168.1.4",
-  :"node2192.168.1.10",
+  :"node2@192.168.1.7",
+  :"node1@192.168.1.6",
 ]
 
 # Import environment specific config. This must remain at the bottom
