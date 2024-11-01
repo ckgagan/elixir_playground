@@ -23,6 +23,7 @@ defmodule Playground.Application do
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Playground.Supervisor]
+    Playground.NodeConnector.connect_nodes()
     Supervisor.start_link(children, opts)
   end
 
